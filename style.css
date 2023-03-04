@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* common styles */
+
+.btn-main {
+    background-color: #EB5757;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px auto 0 auto;
+    display: block;
+}
+
+.btn-main:hover {
+    background-color: #cc4141;
+}
+
+.btn-accuracy {
+    background-color: #EB5757;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+.btn-accuracy-container {
+    padding: 25px;
+    position: absolute;
+    right: 0;
+}
+
+li {
+    list-style: none;
+    color: #585858;
+    font-size: 14px;
+}
+
+.fa-calendar-days {
+    color: #585858;
+}
+
+/* common style close */
+
+.body-container {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.title-date-container {
+    padding: 10px;
+}
+
+/* card designs */
+
+.card-container {
+    width: 100%;
+    position: relative;
+}
+
+/* spinner */
+.spinner-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-group {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card-image {
+    height: 250px;
+}
+
+.card-img-top {
+    padding: 20px;
+    height: 100%;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.more-details {
+    padding: 2px 8px;
+    background-color: #f8e6e6;
+    border: none;
+    outline: none;
+    color: #EB5757 !important;
+}
+
+.more-details:hover {
+    background-color: #EB5757;
+    color: #ffffff !important;
+}
+
+.card-text {
+    font-size: 14px;
+}
+
+/* modal design */
+.modal-body {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+}
+
+.modal-left-container,
+.modal-right-container {
+    width: 50%;
+}
+
+.modal-left {
+    background-color: #f8e6e6;
+}
+
+.modal-button-container {
+    display: flex;
+    gap: 5px;
+}
+
+.modal-button-container>button {
+    background-color: #FFFFFF;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.modal-btn-1 {
+    color: #03A30A;
+}
+
+.modal-btn-2 {
+    color: #F28927;
+}
+
+.modal-btn-3 {
+    color: #EB5757;
+}
+
+.modal-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-style-disc {
+    list-style: disc;
+}
+
+.modal-cross {
+    height: 35px;
+    width: 35px;
+    border: none;
+    outline: none;
+    background-color: #EB5757;
+    color: #ffffff;
+    position: absolute;
+    right: -15px;
+    top: -15px;
+}
+
+@media screen and (min-width: 1800px) {
+    .card-container {
+        width: 1400px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .body-container {
+        width: 100%;
+    }
+
+    /* modal */
+    .modal-body {
+        flex-direction: column;
+    }
+
+    .modal-left-container,
+    .modal-right-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card-group {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .body-container {
+        width: 100%;
+        padding: 0;
+    }
+    
+    .card-group {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card-image {
+        height: 100%;
+    }
+
+    /* modal */
+    .modal-button-container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    /* modal */
+    .modal-details {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
